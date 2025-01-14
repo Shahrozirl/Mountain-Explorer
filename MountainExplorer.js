@@ -1,12 +1,9 @@
-document.querySelectorAll('.container > div').forEach((div, index) => {
-    div.addEventListener('click', () => {
-      if (index === 0) {
-        window.location.href = 'mclaren.html'; // Redirect for first image
-      } else if (index === 1) {
-        window.location.href = 'ferrari.html'; // Redirect for second image
-      } else if (index === 2) {
-        window.location.href = 'porsche.html'; // Redirect for third image
-      }
-    });
+// JavaScript to make images clickable
+document.querySelectorAll('.container > .image').forEach((div, index) => {
+  div.addEventListener('click', () => {
+    // Get the link associated with the clicked image
+    const link = div.getAttribute('data-link');
+    // Navigate to the linked page
+    window.location.href = link;
   });
-  
+});
