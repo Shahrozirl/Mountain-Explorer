@@ -1,18 +1,12 @@
-let currentIndex = 0;
-
-function scrollImages(direction) {
-    const imageDisplay = document.querySelector('.image-display');
-    const images = document.querySelectorAll('.carousel-image');
-    const totalImages = images.length;
-
-    currentIndex += direction;
-    if (currentIndex < 0) currentIndex = totalImages - 1;
-    if (currentIndex >= totalImages) currentIndex = 0;
-
-    const offset = -currentIndex * 100;
-    imageDisplay.style.transform = `translateX(${offset}%)`;
-}
-
-function goToPage(page) {
-    window.location.href = page;
-}
+document.querySelectorAll('.container > div').forEach((div, index) => {
+    div.addEventListener('click', () => {
+      if (index === 0) {
+        window.location.href = 'mclaren.html'; // Redirect for first image
+      } else if (index === 1) {
+        window.location.href = 'ferrari.html'; // Redirect for second image
+      } else if (index === 2) {
+        window.location.href = 'porsche.html'; // Redirect for third image
+      }
+    });
+  });
+  
