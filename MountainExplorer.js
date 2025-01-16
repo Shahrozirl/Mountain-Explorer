@@ -1,9 +1,11 @@
-// JavaScript to make images clickable
+// JavaScript to make images clickable in the homepage
 document.querySelectorAll('.container > .image').forEach((div, index) => {
   div.addEventListener('click', () => {
-    // Get the link associated with the clicked image
+    // Here I am getting the link thats linked to the clicked image
     const link = div.getAttribute('data-link');
-    // Navigate to the linked page
+    // Redirects you to said page
     window.location.href = link;
   });
 });
+
+

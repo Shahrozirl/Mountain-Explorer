@@ -6,7 +6,7 @@
 }
 
 
-body {
+#homepage {
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -98,3 +98,56 @@ body {
 }
 }
 
+
+
+/* General body styling */
+#ferraripage {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* Spacer sections for static background images */
+.spacer {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height for each image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Key for static background effect */
+  z-index: 0;
+}
+
+.bg1 {
+  background-image: url("https://cdn.ferrari.com/cms/network/media/img/resize/66f16a8ac0d97b00116d7122-laferrari-logo-1920x1080px?width=1920&height=1080");
+}
+
+.bg2 {
+  background-image: url("https://www.amalgamcollection.com/cdn/shop/products/M5712-422-FerrariLaFerrari1.8Scale-Front3.4WIDEEDIT_2000x850_crop_center.jpg?v=1628764043");
+}
+
+.bg3 {
+  background-image: url("https://www.sportscarmarket.com/2016-ferrari-laferrari-main");
+}
+
+/* Container sections */
+.container1 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9); /* Black overlay for containers */
+  width: 100%;
+  min-height: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: white;
+}
