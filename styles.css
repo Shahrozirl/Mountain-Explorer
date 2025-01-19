@@ -112,7 +112,8 @@
 .spacer {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full screen height for each image */
+  height: 70vh; /* Only 70% of the viewport height is visible */
+  overflow: hidden; /* Ensures the image appears "cropped" */  
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Key for static background effect */
@@ -124,11 +125,35 @@
 }
 
 .bg2 {
-  background-image: url("https://www.amalgamcollection.com/cdn/shop/products/M5712-422-FerrariLaFerrari1.8Scale-Front3.4WIDEEDIT_2000x850_crop_center.jpg?v=1628764043");
+  background-image: url("https://www.topgear.com/sites/default/files/cars-car/carousel/2015/02/buyers_guide_-_laf_-_rear.jpg");
 }
 
 .bg3 {
-  background-image: url("https://www.sportscarmarket.com/2016-ferrari-laferrari-main");
+  background-image: url("https://targadoaccessories.com/cdn/shop/articles/out-0_8373a176-1704-41dc-b87b-b32b8c965865.png?v=1730529013");
+}
+
+/* Info boxes in spacers */
+.info-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly opaque background */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.info-box.left {
+  left: 5%; /* Aligned to the left */
+  text-align: left;
+}
+
+.info-box.right {
+  right: 5%; /* Aligned to the right */
+  text-align: right;
 }
 
 /* Container sections */
@@ -150,4 +175,174 @@
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   color: white;
+}
+
+/*Footer*/
+.container3 {
+  display: flex; /*Enable Flexbox*/
+  gap: 10px; /*Add spacing between columns*/
+  padding: 20px;
+}
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }
