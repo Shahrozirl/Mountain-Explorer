@@ -47,6 +47,16 @@
     &:nth-of-type(3) {
         background-image: url("https://cdn.wallpapersafari.com/37/82/AykQU62.webp");
     }
+    &:nth-of-type(4) {
+      background-image: url("https://images.unsplash.com/photo-1632479803237-53e868bb2133?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFtYm9yZ2hpbmklMjBsb2dvfGVufDB8fDB8fHww");
+    }
+    &:nth-of-type(5) {
+        background-image: url("https://i.pinimg.com/736x/88/47/10/8847103ba6a931a08be4df3d57c03bde.jpg");
+    }
+    &:nth-of-type(6) {
+        background-image: url("https://i.pinimg.com/736x/cc/00/e3/cc00e36d34ac3de415fea3c59354f5a8.jpg");
+    }
+
 
 
     /* Hover state */
@@ -67,6 +77,19 @@
         background-image: url("https://i.pinimg.com/originals/3e/ee/52/3eee5249eb0ec35d21e99e7a39d4b826.jpg");
         box-shadow: 1px 3px 15px #fdde63;
         }
+        &:hover:nth-of-type(4) {
+        background-image: url("https://i.pinimg.com/736x/02/8b/72/028b72b7c36d54354fdc3458f0875dad.jpg");
+        box-shadow: 1px 3px 15px #ff8000;
+        }
+        &:hover:nth-of-type(5) {
+        background-image: url("https://i.pinimg.com/originals/17/56/11/1756111d03f1af229f19960e63549e12.jpg");
+        box-shadow: 1px 3px 15px #ff1010;
+        }
+        &:hover:nth-of-type(6) {
+        background-image: url("https://d1tq3fcx54x7ou.cloudfront.net/uploads/store/tenant_161/project/17675/image/large-34c431d7d422f3a5f306b735e4f6ee32.jpg");
+        box-shadow: 1px 3px 15px #fdde63;
+        }
+  
 
 
 .content {
